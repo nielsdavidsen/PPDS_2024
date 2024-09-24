@@ -7,5 +7,8 @@ data_filtered = h3p.read_data2("Land_and_Ocean_summary.txt", (2000, 2010))
 
 all_data = h3p.read_data2("Land_and_Ocean_summary.txt")
 
+temp_anomaly_data = h3p.read_data3("Land_and_Ocean_summary.txt", (2015, 2018))
+
+print(temp_anomaly_data)
 
 

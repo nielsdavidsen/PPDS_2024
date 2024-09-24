@@ -2,7 +2,7 @@ import re
 
 def read_word_file(filename):
 
-    '''Reads a file and provides a list of line number and line content for each line.
+    '''Reads a file and provides a list of line index and line content for each line contained in the file.
     
     Parameters
     ----------
