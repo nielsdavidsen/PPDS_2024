@@ -58,5 +58,57 @@ info = MyInfo('Anso', 'Maxen', 24)
 
 info.print()
 
+#new classes, now using inheritance. 
 
+
+class Person:
+
+    def __init__(self, name, cpr, address):
+        self.name = name
+        self.cpr = cpr
+        self.address = address
+
+
+class Student(Person):
+
+    def __init__(self, name, cpr=0, address='none', student_id=1):  #you still need to add all the same attributes as the base-class
+        super().__init__(name, cpr, address)             #here comes the inheritance
+        self.student_id = student_id
+
+
+#testing the underclass
+stud = Student('Ac', 1234, 'sted', 'dhv202')
+
+print(stud.address)
+
+
+#class of students
+
+class StudentGroup:
+    def __init__(self, students=[]):
+        '''Constructor. The list of students is optional'''
+        self.students = students
+
+    def add_student(self, student):
+        '''Constructor. Add a new student to the group'''
+        self.students.append(student)
+
+    def get_names(self, students):
+
+        for student in students:
+            print(student.name)
+
+
+#testing my group-maker
+albert = Student(name="Albert Einstein",
+                 cpr="14031879-1235") 
+
+ac = Student(name="AC", cpr="123456-1234")
+
+group = StudentGroup()
+
+group.students.append(albert)
+group.students.append(ac)
+
+group.get_names(group.students)
 

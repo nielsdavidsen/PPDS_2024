@@ -15,6 +15,7 @@ Sep 9, 11:15, T=-10deg
 Sept 12, 09:00AM, T=32deg
 Oct12 13:00, T=32degr'''
 
+
 data_lines = data.split('\n')
 
 mypattern = re.compile(r"^([a-zA-Z]+ ?[0-9]+),? ?([0-9]*:[0-9]+[A-Z]*), ([A-Za-z]*=-*[0-9]*[a-s]*)")
