@@ -8,7 +8,14 @@ def read_data2(filename, year_range = (0, 2025)):
         The name of the file to be read.
         
     year_range : tuple
-        A tuple of two integers, the first being the start year and the second being the end year.'''
+        A tuple of two integers, the first being the start year and the second being the end year.
+        default: (0, 2025).
+        
+    Returns
+    -------
+    data_list : list
+        A list of the data lines in the file.
+    '''
 
     file = open(filename, "r")
 
@@ -48,11 +55,13 @@ def read_data3(filename, year_range = (0,2025)):
         
     year_range : tuple
         A tuple of two integers, the first being the start year and the second being the end year.
+        default: (0, 2025).
         
     Returns
     -------
-    data_list : list
-        A list of the data lines in the file.'''
+    data_list : dict
+        A dictionary of the data lines in the file. The key is the year and the value is a list of the data entries.
+    '''
 
     file = open(filename, "r")
 

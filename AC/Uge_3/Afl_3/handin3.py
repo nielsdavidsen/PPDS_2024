@@ -40,6 +40,7 @@ def read_word_file2(filename, filter_re_str = ''):
         The name of the file to be read.
     filter_re_str : str
         A regular expression string to filter the lines by.
+        default: ''. No filter.
         
     Returns
     -------
