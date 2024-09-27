@@ -30,3 +30,13 @@ class AnomalyData:
         self.data = data_dict
 
     def one_value_per_decade(self):
+
+        new_local_dict = {}
+
+        for year in self.data:
+
+            if year % 10 == 0:
+
+                new_local_dict[year] = self.data[year]
+
+        return new_local_dict

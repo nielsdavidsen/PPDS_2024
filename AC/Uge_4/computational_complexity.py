@@ -6,5 +6,4 @@
 
 #Big O, 0(n), notation is a way to describe the upper bound of the speed of an algorithm, its the computational complexity
 
-
 #Binary search is O(log(n)), linear search is O(n), loop inside of loop is O(n^2)

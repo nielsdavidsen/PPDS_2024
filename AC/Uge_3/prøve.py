@@ -22,3 +22,7 @@ list_of_strings = ['first\n', 'second\n', 'third\n', 'fourth']
 list_of_strings = [string.strip() for string in list_of_strings]
 
 print(list_of_strings)
+
+dicti = {'a': 1, 'b': 2, 'c': 3}
+
+print(dicti['b'])
