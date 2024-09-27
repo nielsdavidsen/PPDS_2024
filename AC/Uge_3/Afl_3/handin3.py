@@ -54,7 +54,7 @@ def read_word_file2(filename, filter_re_str = ''):
 
     for i, line in enumerate(file):
 
-        pattern = re.compile(filter_re_str)
+        pattern = re.compile(filter_re_str)   #this would be better outside of the loop, becuase it doesnt change
         
         if line[-1] == "\n" and pattern.match(line):
             list_of_content.append((i, line[:-1]))

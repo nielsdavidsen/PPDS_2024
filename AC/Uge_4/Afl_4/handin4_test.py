@@ -19,3 +19,10 @@ differences_binary_search = h4.wordfile_differences_binary_search("british-engli
 
 time_spent_binary_search = timeit.default_timer() - start_time_binary_search
 
+worddict_american = h4.wordfile_to_dict("american-english")
+
+start_time_dict_search = timeit.default_timer()
+
+differences_dict_search = h4.wordfile_differences_dict_search("british-english", "american-english")
+
+time_spent_dict_search = timeit.default_timer() - start_time_dict_search
