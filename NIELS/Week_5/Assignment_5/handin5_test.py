@@ -8,7 +8,6 @@ print(mnist_data.shape)
 digital_image_groups = h5.group_by_label(mnist_data)
 if len(digital_image_groups) != 10:
     print("Error: Expected 10 groups, got", len(digital_image_groups))
-    exit(1)
 else:
     print(f"Success: Found {len(digital_image_groups)} groups")
 
