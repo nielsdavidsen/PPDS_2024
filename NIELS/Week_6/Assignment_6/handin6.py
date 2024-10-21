@@ -7,13 +7,18 @@ def find_palindromes(word_dataframe, minimum_length=4):
     out words with appostrophes.
 
     Parameters:
-    word_dataframe (pandas DataFrame): A DataFrame with a column 'word' containing words (strings).
+    ----------------
+    word_dataframe (pandas DataFrame): 
+        A DataFrame with a column 'word' containing words (strings).
 
-    minimum_length (int): The minimum length of the words to be included in the output DataFrame.
+    minimum_length (int): 
+        The minimum length of the words to be included in the output DataFrame.
 
     
     Returns:
-    pandas DataFrame: A DataFrame with only the words that are palindromes and have a minimum length of characters specified
+    ----------------
+    pandas DataFrame: 
+        A DataFrame with only the words that are palindromes and have a minimum length of characters specified
     '''
 
     # Make all words lowercase
@@ -37,6 +42,24 @@ def find_palindromes(word_dataframe, minimum_length=4):
 
 def find_words_starting_with(word_dataframe, prefix):
     '''
+    A function that takes a prefix string and a DataFrame with a column 'word' and returns a dictionary with the words staring with the prefix. 
+    The keys of the dictionary are the length of the words and the values are lists of words with that length. The function is case insensitive, but leaves
+    out words with appostrophes.
+
+    Parameters:
+    ----------------
+
+    word_dataframe : pandas DataFrame
+        A DataFrame with a column 'word' containing words (strings).
+
+    prefix : str
+        A string with the prefix to search for in the words.
+
+    Returns:
+    ----------------
+    dict: 
+        A dictionary with the words starting with the prefix. The keys are the length of the words and the values are lists of words with that length.
+
 
     '''
 
